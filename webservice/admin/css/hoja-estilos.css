@@ -1,0 +1,272 @@
+/***** ZONA MASCOTA - NAF *****/
+
+.navbar-nav.navbar-user > li {
+    border-bottom: none;
+}
+.side-nav > li.dropdown > ul.dropdown-menu{ height:99px; overflow-y:auto;}
+#login.col-sm-4{ float:none; margin:0 auto;}
+#login.col-sm-4 .form-horizontal{
+	background-color: #FFF;
+	padding:20px 60px;
+	margin:0 -40px;
+	border:1px solid #ddd;
+}
+.modal-backdrop.fade.in {
+    opacity: 0.9;
+}
+#login .page-header{ border:none; margin-bottom:0;}
+#login h1{ font-weight:bold;}
+#aeurus{ background-color:#333; text-align:right; padding:8px 0; position:fixed; width:100%; bottom:0;}
+#aeurus img{ vertical-align:text-top; margin-right:8px;}
+
+.side-nav .active .dropdown-menu { display: block;}
+.side-nav .dropdown-menu li.active a{
+	background:#e7425f !important;
+}
+
+#multiselectForm .table-hover .bootstrap-select .btn{ line-height:16px;}
+#multiselectForm .table-hover .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 290px;
+}
+#multiselectForm .table thead > tr > th, #multiselectForm .table tbody > tr > th, #multiselectForm .table tfoot > tr > th, #multiselectForm .table thead > tr > td, #multiselectForm .table tbody > tr > td, #multiselectForm .table tfoot > tr > td{ vertical-align:middle;}
+
+/*.adjunto-doc{
+	background: url(../imagenes/sitio/documento.png) 0 0 no-repeat;
+	display:table-cell;
+	padding:2px 0 4px 34px;
+	margin-top:-2px;
+}*/
+
+
+/***** Archivo Adjunto *****/
+.nice .NFI-button {
+    color: #fff;
+    font-size: 14px;
+    line-height: 38px;
+	background-color:#428bca;
+    width: 25%;
+    height: 38px;
+    transition: all 200ms ease 0s;
+	-webkit-border-radius: 0 4px 4px 0;
+	-moz-border-radius: 0 4px 4px 0;
+	border-radius: 0 4px 4px 0;
+}
+.nice .NFI-button:hover { background-color:#3276b1;}
+.nice .NFI-filename {
+	color:#555;
+    font-size: 14px;
+    line-height: 38px;
+    height: 38px;
+    background-color: #ffffff;
+    padding: 0 16px;
+    width: 75%;
+	-webkit-border-radius: 4px 0 0 4px;
+	-moz-border-radius: 4px 0 0 4px;
+	border-radius: 4px 0 0 4px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+/***** Fin de Archivo  *****/
+
+
+td.editar{ width:100px;}
+td.editar .btn{ margin-top:-5px;}
+#mapa iframe{ width:100%;}
+.text-box{ text-align:center; background-color:#fbfaf8; clear:both; padding:15px 0; margin:20px 0;}
+
+.date-grafico .col-sm-3{ width:171px; float:left;}
+
+.filtro .col-md-3{ margin-bottom:10px;}
+.thumbnail .table{ margin-bottom:0;}
+
+
+
+
+/*footer{
+	font-size: 16px;
+	background: #141414 url(../imagenes/template/logo-footer.png) 40px 14px no-repeat;
+	width:100%;
+	position:fixed;
+	z-index:1030;
+	bottom:0;
+}
+footer.fixer{
+	background: #141414 url(../imagenes/template/logo-footer.png) 40px 30px no-repeat;
+	display: block;
+}
+footer.fixer address{ padding:44px 0 10px 160px;}
+footer address{ padding:20px 0 1px 160px;}
+#aeurus{ background:#333; padding:8px; text-align:right;}
+#aeurus img{ vertical-align:top;}
+.fixer{ position:fixed; width:100%; bottom:0;}
+.glyphicon img{ margin-top:-2px;}
+.navbar-right{ margin-top:20px;}
+
+.scroll-background {
+	background:#FFF;
+    height: 223px;
+    overflow: auto;
+    position: relative;
+	border:1px solid #ddd;
+}
+.scroll-background .panel-body{ border-bottom:1px solid #ddd;}
+.scroll-background .panel-body:last-child{ border-bottom:none;}
+.scroll-background small, .scroll-background .text-muteds{ color:#999;}
+.ver a, .download a, .remove a{ font-size:18px; margin:0 -2px;}
+
+.ver a{ color:#009bff;}
+.download a{ color:#79a94d;}
+.remove a{ color:#b34f4f;}
+
+.glyphicon a:hover, a.glyphicon:hover{text-decoration: none; opacity:0.8;}
+.scroll-background .doc-pdf{ margin:0;}
+.scroll-background .doc-pdf img{ margin:-3px 0 0 5px;}
+.scroll-background td{
+	border-bottom: 1px solid #dddddd;
+    line-height: 1.42857;
+    padding:20px 10px 15px 15px;
+    vertical-align: top;
+}
+.scroll-background td.download{ padding:20px 20px 15px 5px;}
+.scroll-background tr:last-child td{ border-bottom:none;}
+.panel-relative{ position:relative;}
+.panel-relative ul{ position:absolute; right:-2px; bottom:-10px; z-index:2; border-bottom:none;}
+img.photo-edit{ margin:0 0 15px 30px;}
+.map iframe{ width:100%; vertical-align:top;}
+.form-control{ min-width:180px;}
+.galeria img{ width:100%; height:auto;}
+.separador{ padding-bottom:10px; margin-bottom:20px; border-bottom:1px solid #dddddd}
+#encuesta-block, .no-nav{
+	background-color: rgba(22, 36, 22, 0.5);
+	transition: opacity 0.15s linear 0s;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index:1029;
+	top: 60px;
+	left:225px;
+}
+.no-nav{
+	width: 225px;
+	top: 60px;
+	left:0;
+	z-index:1031;
+	background-color: rgba(22, 36, 22, 0.5);
+	transition: opacity 0.15s linear 0s;
+}
+.encuesta-home{
+	color:#9d9d9d;
+	background-color: #222;
+	width: 550px;
+	padding:10px 20px 20px 35px;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	z-index:10;
+}
+.encuesta-home h3{
+	font-weight: bold;
+	margin-bottom:30px;
+}
+.encuesta-home form{ height:420px; overflow-y: auto;}
+#encuesta-block ol{ padding-left:20px;}
+.encuesta-home .radio{ padding-bottom:10px;}
+.encuesta-home textarea{ margin:0 0 20px 5px;}
+.encuesta-home .form-horizontal li{
+	padding-top: 20px;
+}
+.encuesta-home .form-horizontal lispan.divide {
+	font-size:15px;
+	font-weight:bold;
+	display:block;
+}
+.encuesta-home .form-horizontal  li:first-child{ padding-top:0; margin-top:0;}
+.video-home{ overflow:hidden;}
+.video-home iframe{ vertical-align:top; width:100%;}
+.video-home .modal-content{
+	border-radius: 0;
+	background-color: #d7d7d7;
+	border:none;
+}
+.video-home .close{ color:#337ab7; font-size:28px; opacity:1;}
+.video-home h4{
+	font-size: 30px;
+	color: #222;
+	text-align:center;
+}
+.video-home .modal {
+    bottom: auto;
+    display: block;
+    left: auto;
+    position: relative;
+    right: auto;
+    top: auto;
+    z-index: 1000;
+}
+.video-home{
+	position: relative;
+	background-color: #F00;
+	height: 600px;
+	width: 600px;
+}*/
+
+
+/**** RESPONSIVE ****/
+@media (min-width: 768px) and (max-width: 1080px) {
+.all-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.all-responsive table{ width:100%;}
+.all-responsive > .table > thead > tr > th,
+.all-responsive > .table > tbody > tr > th,
+.all-responsive > .table > tfoot > tr > th,
+.all-responsive > .table > thead > tr > td,
+.all-responsive > .table > tbody > tr > td,
+.all-responsive > .table > tfoot > tr > td {
+white-space: nowrap;
+}
+}
+@media (max-width: 990px) {
+.text-align-center{ text-align:center;}
+.mg15{ margin-bottom:15px;}
+}
+@media (max-height: 768px) {
+#wrapper{ /*padding-bottom:70px;*/ min-height:520px;}
+#login.col-sm-4 .form-horizontal {
+	padding: 20px 15px;
+	margin: 0;
+	border: none;
+	border-top: 1px solid #ddd;
+}
+h1, .h1 { font-size: 31px;}
+}
+@media (min-width: 768px) and (max-width: 896px) {
+.form-control{  margin-bottom:5px;}
+}
+@media (max-width: 530px) {
+.panel-relative ul{ position:relative; bottom:0; right:auto;}
+.scroll-background td { padding: 20px 5px 15px 5px;}
+.scroll-background td.download { padding: 20px 15px 15px 5px;}
+.scroll-background .doc-pdf img { margin: 0 0 0 10px;}
+img.photo-edit{ width:100%; height:auto; margin:0 0 16px;}
+}
+@media (max-width: 450px) {
+.date-grafico label{ text-align:right; width:50px; clear:left;}
+.date-grafico .col-sm-3 {
+    width: 171px;
+	margin-bottom:10px;
+}
+}
+
+/*@media (max-width: 400px) {
+.media-list.editable .pull-left{ float:none !important;}
+.media-list.editable .pull-left img, .media-list.editable img.pull-left{ width:100%; height:auto;}
+}
+*/
+#mapa{
+	height:150px;
+}

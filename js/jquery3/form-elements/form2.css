@@ -1,0 +1,51 @@
+.checkbox, .radio {
+	width: 24px;
+	height: 20px;
+	padding: 0 6px 0 0;
+	margin:0;
+	background: url(checkbox.png) no-repeat;
+	display: block;
+	clear: left;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.radio {
+	background: url(radio.png) no-repeat;
+}
+.select {
+	color: #5a5a5a;
+	font-size:14px;
+	line-height:32px;
+	font-family: "Lucida Grande",sans-serif;
+	position: absolute;
+	width: 100%; /* With the padding included, the width is 190 pixels: the actual width of the image. */
+	min-width:70px;
+	height: 32px;
+	padding: 0 28px 0 10px;
+	background: #f1f1f1 url(select.png) right center no-repeat;
+	overflow: hidden;
+	border:1px solid #cfcfcf;
+	/*border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+select.styled{ min-width:69px;}
+.form-select select{ margin:0;}
+select{
+	font-size:14px;
+	color: #5a5a5a;
+	font-family: "Lucida Grande",sans-serif;
+	background-color: #f1f1f1;
+	height:32px;
+	border:none;
+}
+/*select option{
+	display: block;
+	padding: 5px 0;
+	text-indent: 10px;
+}*/

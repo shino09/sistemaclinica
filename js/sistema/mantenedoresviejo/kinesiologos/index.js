@@ -1,0 +1,85 @@
+$(function(){
+var url_base = "/mantenedores/kinesiologos/";
+$("#form-filtro").validationEngine('attach', {
+		promptPosition:'topLeft',
+	validationEventTrigger:false,
+	showOneMessage:true,
+		onValidationComplete: function(form, status){
+		if(status) {
+		var busqueda = $("#busqueda").val();
+		var centros = $("#centros").val();
+		var url_busqueda = url_base;
+		if(busqueda)
+			url_busqueda = url_busqueda + 'busqueda/'+busqueda+'/';
+			if(centros)
+				url_busqueda = url_busqueda + 'centro/'+centros+'/';
+		window.location.href = url_busqueda;
+	}
+}
+});
+	$(".eliminar").click(function(e){
+
+		e.preventDefault();
+		var codigo = $(this).attr('rel');
+		noty({
+		layout: 'topCenter',
+		fondo: '<div id="fondo" style=" position: fixed; top:0; height: 100%; width:100%; background-color: rgba(60, 56, 56, 0.38); display:block;z-index: 9999;"></div>',
+		  text: '¿Est&aacute;s seguro que desea eliminar esta registro?',
+		  buttons: [
+			{addClass: 'btn btn-primary', text: 'Aceptar', onClick: function($noty) {
+				$noty.close();
+				$(window).unbind('beforeunload');
+
+				noty({
+					text: 'El registro est&aacute; siendo eliminado. Por favor, espere un momento.',
+					layout: 'topCenter',
+					type: 'alert',
+					killer:true,
+					closeWith: [],
+					template: '<div class="noty_message"><img src="/imagenes/sitio/ajax-loader.gif">&nbsp;&nbsp;<span class="noty_text"></span><div class="noty_close"></div></div>',
+					fondo: '<div id="fondo" style=" position: fixed; top:0; height: 100%; width:100%; background-color: rgba(60, 56, 56, 0.38); display:block;z-index: 9999;"></div>'
+				});
+
+				$.ajax({
+					type: "POST",
+					data: "codigo="+codigo,
+					dataType: "json",
+					url: url_base+"eliminar/",
+					success: function(json){
+						if(json.result){
+							noty({
+								text: "El registro ha sido eliminado con &eacute;xito.",
+								layout: 'topCenter',
+								type: 'success',
+								timeout: 3000,
+								killer: true
+							});
+							setTimeout(function() {
+									$("#eliminar-"+codigo).remove();
+							}, 1000);
+						}
+						else
+						{
+							var error = noty({
+								text: json.msg,
+								layout: 'topCenter',
+								type: 'error',
+								timeout: 2000
+							});
+						}
+					}
+				});
+			  }
+			},
+			{addClass: 'btn btn-danger', text: 'Cancelar', onClick: function($noty) {
+				$noty.close();
+			  }
+			}
+		  ]
+		});
+
+	});
+
+		
+
+});
